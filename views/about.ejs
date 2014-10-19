@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include partials/templates/head.ejs %>
+  </head>
+  <body>
+    <div class="container-fluid">
+    	<% include partials/templates/header.ejs %>
+    	<div class="col-md-9">
+    		<h1>About Us</h1>
+        <p> <%- appData.about %></p>
+	
+    	</div><!-- col-md-9 -->
+    	<div class="col-md-3">
+    		sidebar goes here
+    	</div><!-- col-md-3 -->
+
+
+    </div><!-- container -->
+    <% include partials/templates/footer.ejs %>
+    <% include partials/templates/jsdefaults.ejs %>
+  </body>
+</html>

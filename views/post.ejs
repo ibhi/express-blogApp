@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include partials/templates/head.ejs %>
+  </head>
+  <body>
+    <div class="container-fluid">
+    	<% include partials/templates/header.ejs %>
+    	<div class="col-md-9">
+    		<div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title"><%= post.title %></h3>
+            <p class="text-muted">Author: <%= post.author %> Date: <%= post.date %></p>
+          </div><!-- panel-heading -->
+          <div class="panel-body">
+            <%- post.content %></h3>
+          </div><!-- panel-body -->
+        </div><!-- panel panel-default -->
+    	</div><!-- col-md-9 -->
+    	<div class="col-md-3">
+    		sidebar goes here
+    	</div><!-- col-md-3 -->
+
+
+    </div><!-- container -->
+    <% include partials/templates/footer.ejs %>
+    <% include partials/templates/jsdefaults.ejs %>
+  </body>
+</html>
